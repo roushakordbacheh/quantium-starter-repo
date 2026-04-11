@@ -24,9 +24,6 @@ def clean_data(df):
     """
     Cleans the data.
 
-    Args:
-        df: The dataframe to be cleaned
-
     Returns:
         out_df: The cleaned dataframe
     """
