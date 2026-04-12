@@ -77,12 +77,12 @@ def create_app(df, app):
         )
         return fig
 
-def main():
+def build_app():
     app = Dash(__name__, assets_folder='../assets')
     df = read_csv()
     create_app(df, app)
-    app.run(debug=True)
-
+    return app
 
 if __name__ == '__main__':
-    main()
+    app = build_app()
+    app.run(debug=True)
